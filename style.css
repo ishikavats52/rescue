@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@700&family=Roboto:ital@1&display=swap');
+
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-html {
+
+html,
+body {
+  background-color: #E25E3E;
   font-size: 10px;
-}
-body{
-  background-color:#E25E3E;
-  font-family: 'Poppins', sans-serif;
+  text-align: center;
+
+
 }
 
 nav {
@@ -42,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color:#9c5b1e;
+  background-color: #9c5b1e;
   border-radius: 3rem;
 }
 
@@ -62,28 +67,173 @@ nav ul li a:hover {
   width: 100%;
   margin: 50px 0;
 }
+
 .leftSection {
   font-size: 3rem;
 
 }
-.leftSection .button{
+
+.leftSection .button {
   padding: 50px 0;
 }
-.leftSection .btn{
+
+.leftSection .btn {
   padding: 12px;
   background: #118d37;
-  color:white;
+  color: white;
   border: 2px solid white;
   font-size: 10rem;
   cursor: pointer;
   border-radius: 5rem;
 }
-#github a{
+
+#github a {
   color: white;
   text-decoration: none;
 }
-footer{
+
+footer {
   height: 10vh;
   width: 100%;
   background-color: #9c5b1e;
+}
+
+/* Feedback css */
+
+.containerFeed {
+  position: relative;
+  width: 40rem;
+  background: #111;
+  padding: 2rem 3rem;
+  border: .1rem solid #444;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-left: 75rem;
+
+}
+.containerFeed .post{
+  display: none;
+}
+.containerFeed .text{
+  font-size: 2.5rem;
+  color:#666;
+  font-weight: 500;
+}
+.containerFeed .edit{
+  position: absolute;
+  right:1rem;
+  top:.5rem;
+  font-size: 1.6rem;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.containerFeed .edit:hover{
+  text-decoration: underline;
+}
+.containerFeed .star-wedget input {
+  display: none;
+}
+
+.star-wedget label {
+  font-size: 4rem;
+  color: #444;
+  padding: 1rem;
+  float: right;
+  transition: all 0.2s ease;
+}
+
+input:not(:checked)~label:hover,
+input:not(:checked)~label:hover~label {
+  color: #fd4;
+}
+
+input:checked~label {
+  color: #fd4;
+}
+
+input#rate-5:checked~label {
+  color: #fe7;
+  text-shadow: 0 0 2rem #952
+}
+
+#rate-1:checked~form header:before {
+  content: "I just hate it 😠";
+}
+
+#rate-2:checked~form header:before {
+  content: "I don't like it 😒";
+}
+
+#rate-3:checked~form header:before {
+  content: "It is awesome 😊";
+}
+
+#rate-4:checked~form header:before {
+  content: "I just like it 😎";
+}
+
+#rate-5:checked~form header:before {
+  content: "I just love it 😍";
+}
+.containerFeed form{
+  display: none;
+}
+input:checked ~ form{
+  display: block;
+}
+form header {
+  width: 100%;
+  font-size: 2.5rem;
+  color: #fe7;
+  font-weight: 500;
+  margin: .5rem 0 2rem 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+form .textarea {
+  height: 10rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: .1rem solid #333;
+  background: #222;
+  padding: 1rem;
+  font-size: 1.6rem;
+  resize: none;
+}
+
+form .btn {
+  height: 4.5rem;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+form .btn button {
+  height: 100%;
+  width: 100%;
+  border: .1rem solid #444;
+  outline: none;
+  background: #222;
+  color: #999;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form .btn button:hover {
+  background: #1b1b1b;
 }
