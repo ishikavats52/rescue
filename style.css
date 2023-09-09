@@ -13,8 +13,6 @@ body {
   background-color: #E25E3E;
   font-size: 10px;
   text-align: center;
-
-
 }
 
 nav {
@@ -237,4 +235,24 @@ form .btn button {
 
 form .btn button:hover {
   background: #1b1b1b;
+}
+/*ABOUT */
+.content{
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  width: 40%;
+  margin:0 auto;
+  text-align: left;
+  
+}
+.content h1{
+  font-size: 5rem;
+  text-decoration: underline
+}
+.content h2{
+  font-size: 3rem;
+}
+.content p{
+  font-size: 2rem;
 }
