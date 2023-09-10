@@ -256,3 +256,41 @@ form .btn button:hover {
 .content p{
   font-size: 2rem;
 }
+/* FAQ */
+.content{
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  width: 40%;
+  margin:0 auto;
+  text-align: left;
+}
+.content h1{
+  font-size: 5rem;
+  text-decoration: underline
+}
+.content h2{
+  font-size: 3rem;
+}
+.content p{
+  font-size: 2rem;
+}
+/* SECURITY */
+.content{
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  width: 40%;
+  margin:0 auto;
+  text-align: left;
+}
+.content h1{
+  font-size: 5rem;
+  text-decoration: underline
+}
+.content h2{
+  font-size: 3rem;
+}
+.content p{
+  font-size: 2rem;
+}
