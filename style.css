@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@700&family=Roboto:ital@1&display=swap');
 
+/* font-family: 'Bree Serif', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +13,7 @@
 
 html,
 body {
-  background-color: #E25E3E;
+  background-color:#ec9746;
   font-size: 10px;
   text-align: center;
 }
@@ -94,7 +97,7 @@ footer {
   margin-top: 2rem;
   height: 10vh;
   width: 100%;
-  background-color: #9c5b1e;
+  background-color: #F6A75D;
 }
 
 /* Feedback css */
@@ -248,11 +251,17 @@ form .btn button:hover {
 }
 .content h1{
   font-size: 5rem;
-  text-decoration: underline
+  padding-bottom: 2rem;
+  font-family: 'Roboto', sans-serif;
+  
 }
 .content h2{
   font-size: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-family: 'Bree Serif', serif;
 }
 .content p{
   font-size: 2rem;
+  font-family: 'Bree Serif', serif;
 }
