@@ -41,7 +41,16 @@ nav ul {
   gap: 4rem;
   text-decoration: none;
 }
-
+nav ul li {
+  display: block;
+  transition:.5s;
+}
+ul:hover li{
+  filter: blur(.4rem);
+}
+ul li:hover{
+  filter: blur(0px);
+}
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -86,6 +95,11 @@ nav ul li a:hover {
   font-size: 10rem;
   cursor: pointer;
   border-radius: 5rem;
+  box-shadow:0 0 .5rem green, 0 0 2.5rem green;
+}
+.leftSection .btn:hover{
+  box-shadow: 0 0 .5rem green,
+  0 0 2.5rem green,0 0 5rem green,0 0 10rem green,0 0 20rem green;
 }
 
 #github a {
@@ -253,7 +267,6 @@ form .btn button:hover {
   font-size: 5rem;
   padding-bottom: 2rem;
   font-family: 'Bree Serif', serif;
-  
 }
 .content h2{
   font-size: 3rem;
