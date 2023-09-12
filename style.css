@@ -8,15 +8,29 @@ font-family: 'Roboto', sans-serif; */
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  
 }
 
+:root {
+  --primary-color: #fff;
+  --secondary-color: #212121;
+}
 
-html,
-body {
-  background-color:white;
+.dark-theme {
+  --primary-color: #000106;
+  --secondary-color: #fff;
+}
+
+html{
   font-size: 10px;
+}
+body {
+  background: var(--primary-color);
   text-align: center;
 }
+
+
+
 /* NAV */
 nav {
   display: flex;
@@ -41,16 +55,20 @@ nav ul {
   gap: 4rem;
   text-decoration: none;
 }
+
 nav ul li {
   display: block;
-  transition:.5s;
+  transition: .5s;
 }
-ul:hover li{
+
+ul:hover li {
   filter: blur(.4rem);
 }
-ul li:hover{
+
+ul li:hover {
   filter: blur(0px);
 }
+
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -60,6 +78,12 @@ nav ul li a:hover {
   background-color: #9c5b1e;
   border-radius: 1.5rem;
   background-size: 10px
+}
+
+#icon {
+  width: 3rem;
+  cursor: pointer;
+  margin-left: 4rem;
 }
 
 /* SECTION */
@@ -76,36 +100,41 @@ nav ul li a:hover {
 
 }
 
-.rightSection{
+.rightSection {
   width: 100%;
   margin: 30px auto;
   position: relative;
   overflow: hidden;
 }
-#slider{
-  width:100%;
+
+#slider {
+  width: 100%;
   display: inline-flex;
   transition: 0.7s;
 
 }
-#slider img{
-  width:100%;
+
+#slider img {
+  width: 100%;
 }
-.indicators{
+
+.indicators {
   position: absolute;
-  left:50%;
-  bottom:20px;
+  left: 50%;
+  bottom: 20px;
   transform: translateX(-50%);
 }
-.indicators span{
-  display:inline-block;
-  width:15px;
-  height:15px;
+
+.indicators span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: rgba(102, 72, 72, 0.5);
-  cursor:pointer;
+  cursor: pointer;
 }
-.active{
+
+.active {
   background: rgb(139, 33, 33) !important;
 }
 
@@ -126,21 +155,23 @@ nav ul li a:hover {
   font-size: 10rem;
   cursor: pointer;
   border-radius: 5rem;
-  box-shadow:0 0 .5rem green, 0 0 2.5rem green;
+  box-shadow: 0 0 .5rem green, 0 0 2.5rem green;
 }
-.leftSection .btn:hover{
+
+.leftSection .btn:hover {
   box-shadow: 0 0 .5rem green,
-  0 0 2.5rem green,0 0 5rem green,0 0 10rem green,0 0 20rem green;
+    0 0 2.5rem green, 0 0 5rem green, 0 0 10rem green, 0 0 20rem green;
 }
 
 #github a {
   color: white;
   text-decoration: none;
 }
+
 /* FOOTER */
 
 footer {
-  margin-top: 2rem;
+  margin-top: 4rem;
   height: 10vh;
   width: 100%;
   background-color: #F6A75D;
@@ -163,7 +194,8 @@ footer {
   margin-left: 75rem;
 
 }
-.containerFeed .post{
+
+/* .containerFeed .post{
   display: none;
 }
 .containerFeed .text{
@@ -182,7 +214,7 @@ footer {
 }
 .containerFeed .edit:hover{
   text-decoration: underline;
-}
+} */
 .containerFeed .star-wedget input {
   display: none;
 }
@@ -209,31 +241,32 @@ input#rate-5:checked~label {
   text-shadow: 0 0 2rem #952
 }
 
-#rate-1:checked~form header:before {
+#rate-1:checked~header:before {
   content: "I just hate it 😠";
 }
 
-#rate-2:checked~form header:before {
+#rate-2:checked~header:before {
   content: "I don't like it 😒";
 }
 
-#rate-3:checked~form header:before {
+#rate-3:checked~header:before {
   content: "It is awesome 😊";
 }
 
-#rate-4:checked~form header:before {
+#rate-4:checked~header:before {
   content: "I just like it 😎";
 }
 
-#rate-5:checked~form header:before {
+#rate-5:checked~header:before {
   content: "I just love it 😍";
 }
-.containerFeed form{
+
+/*  .containerFeed form{
   display: none;
-}
-input:checked ~ form{
+} 
+ input:checked ~ form{
   display: block;
-}
+}  */
 form header {
   width: 100%;
   font-size: 2.5rem;
@@ -242,6 +275,18 @@ form header {
   margin: .5rem 0 2rem 0;
   text-align: center;
   transition: all 0.2s ease;
+}
+
+.alert {
+  width: 100%;
+  background: rgb(0, 255, 106);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  display: none;
+
 }
 
 form .textarea {
@@ -285,28 +330,34 @@ form .btn button {
 form .btn button:hover {
   background: #1b1b1b;
 }
+
 /*ABOUT */
-.content{
+.content {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-direction: column;
   width: 40%;
-  margin:0 auto;
+  margin: 0 auto;
   text-align: left;
-  
 }
-.content h1{
+
+.content h1 {
   font-size: 5rem;
   padding-bottom: 2rem;
   font-family: 'Bree Serif', serif;
+  color: var(--secondary-color);
 }
-.content h2{
+
+.content h2 {
   font-size: 3rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
   font-family: 'Bree Serif', serif;
+  color: var(--secondary-color);
 }
-.content p{
+
+.content p {
   font-size: 2rem;
   font-family: 'Bree Serif', serif;
+  color: var(--secondary-color);
 }
