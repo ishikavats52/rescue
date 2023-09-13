@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <h1>Rescue</h1>
@@ -19,40 +21,42 @@
             <li><a href="security.html" target="_parent">Security</a></li>
             <li><a href="policies.html" target="_parent">Policies</a></li>
             <li><a href="contact.html" target="_parent">Contact</a></li>
-           
+
         </ul>
+        <img src="./moon.png" alt="" id="icon">
     </nav>
     <div class="containerFeed">
-        <div class="post">
-            <div class="text">Thank for rating us!</div>
-            <div class="edit">EDIT</div>
-        </div>
-        <div class="star-wedget">
-            <input type="radio" name="rate"  id="rate-5">
-            <label for="rate-5" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-4">
-            <label for="rate-4"  class="fas fa-star"></label>
-            <input type="radio" name="rate"  id="rate-3">
-            <label for="rate-3" class="fas fa-star"></label>
-            <input type="radio" name="rate"  id="rate-2">
-            <label for="rate-2" class="fas fa-star"></label>
-            <input type="radio" name="rate"  id="rate-1">
-            <label for="rate-1" class="fas fa-star"></label>
-            <form action="#">
-                <header></header>
+        <div class="alert">Thank for rating us!</div>
+        <form id="feedbackForm">
+            <div class="star-wedget" id="feedbackA">
+                <input type="radio" name="rate" id="rate-5" value="5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4" value="4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3" value="3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2" value="2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1" value="1">
+                <label for="rate-1" class="fas fa-star"></label>
+
+                <header id="head"></header>
                 <div class="textarea">
-                    <textarea cols="30" placeholder="Describe your experience..."></textarea>
+                    <textarea cols="30" placeholder="Describe your experience..." id="msgContent"></textarea>
                 </div>
                 <div class="btn">
-                    <button type="submit">Post</button>
+                    <button type="submit" id="submit">Post</button>
                 </div>
-            </form>
-        </div>
+
+        </form>
+    </div>
     </div>
     <footer>
         <h1>footer</h1>
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/c2a94fbf5c.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 <script src="script.js"></script>
+
 </html>
