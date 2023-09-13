@@ -88,10 +88,10 @@ const firebaseConfig = {
   appId: "1:773889871752:web:d3025f181688f42f07743d"
 };
 
-// initialize firebase
+
 firebase.initializeApp(firebaseConfig);
 
-// reference your database
+
 var feedbackFormDB = firebase.database().ref("feedback");
 
 document.getElementById("feedbackForm").addEventListener("submit", submitForm);
@@ -103,15 +103,12 @@ function submitForm(e) {
   var msgContent = getElementVal("msgContent");
   saveMessages(rate, msgContent);
 
-  //   enable alert
   document.querySelector(".alert").style.display = "block";
 
-  //   remove the alert
   setTimeout(() => {
     document.querySelector(".alert").style.display = "none";
   }, 1000);
 
-  //   reset the form
   document.getElementById("feedbackForm").reset();
 
 }
@@ -128,8 +125,4 @@ const saveMessages = (rate, msgContent) => {
 const getElementVal = (id) => {
   return document.getElementById(id).value;
 };
-
-
-
-
 
