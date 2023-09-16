@@ -464,6 +464,8 @@ img {
     display: block;
     columns: 2;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 14rem;
     font-size: 5rem;
 
@@ -481,14 +483,6 @@ img {
     width: 70%;
 
   }
-
-
-  /*  .leftSection .btn {
-    font-size: 18rem;
-    border-radius: 10rem;
-  } */
-
-
 
   footer {
     height: 17vh;
@@ -508,6 +502,10 @@ img {
     margin-top: 5rem;
   }
 
+  /*  .leftSection .btn {
+    font-size: 18rem;
+    border-radius: 10rem;
+  } */
 
   /*
   .content h1 {
@@ -548,11 +546,43 @@ img {
   } */
 }
 
-/* @media(max-width:614px) {
+ @media(max-width:614px) {
   html {
     font-size: 15%;
   }
+ 
+  nav h1 {
+    font-size: 10rem;
+  }
 
+  nav ul {
+    font-size: 7rem;
+  }
+  #icon {
+    width: 8rem;
+  }
+
+  footer h1 {
+    font-size: 6rem;
+  }
+
+  footer h2 {
+    font-size: 5rem;
+  }
+  .content h1 {
+    font-size: 11rem;
+  }
+
+  .content h2 {
+    font-size: 9rem;
+  }
+
+  .content p {
+    font-size: 6rem;
+  } 
+
+ 
+/*
   nav {
     height: 5vh;
   }
@@ -594,13 +624,44 @@ img {
   footer h2 {
     font-size: 7rem;
   }
-
+*/
 }
 
 @media(max-width:468px) {
   html {
     font-size: 10%;
   }
+  nav h1 {
+    font-size: 15rem;
+  }
+
+  nav ul {
+    font-size: 12rem;
+  }
+  #icon {
+    width: 10rem;
+  }
+  footer h1 {
+    font-size: 8rem;
+  }
+
+  footer h2 {
+    font-size: 7rem;
+  }
+  .content h1 {
+    font-size: 13rem;
+  }
+
+  .content h2 {
+    font-size: 11rem;
+  }
+
+  .content p {
+    font-size: 8rem;
+  } 
+
+
+/*
 
   nav {
     height: 5vh;
@@ -680,9 +741,9 @@ img {
     font-size: 4rem;
   }
 
-
+*/
 }
-
+/*
 @media(max-width:395px) {
   html {
     font-size: 5%;
