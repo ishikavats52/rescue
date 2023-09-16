@@ -440,59 +440,76 @@ img {
 }
 
 @media (max-width: 850px) {
+  html {
+    font-size: 20%;
+  }
+
   .firstSection {
     flex-direction: column;
     width: 100%;
   }
 
-  html {
-    font-size: 20%;
-  }
-
   nav {
-    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    height: 28vh;
+
   }
 
   nav h1 {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 
   nav ul {
-    font-size: 3.5rem;
-    padding-left: 10rem;
+    display: block;
+    columns: 2;
+    flex-direction: column;
+    gap: 14rem;
+    font-size: 5rem;
+
+  }
+
+  nav ul li {
+    padding-top: 1.5rem;
   }
 
   #icon {
-    width: 5rem;
+    width: 6rem;
   }
 
   .firstSection>div {
-    width: 60%;
+    width: 70%;
 
   }
 
-  .leftSection .btn {
+
+  /*  .leftSection .btn {
     font-size: 18rem;
     border-radius: 10rem;
-  }
+  } */
+
+
 
   footer {
-    height: 10vh;
+    height: 17vh;
   }
 
   footer h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   footer h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
 
   .content {
     width: 80%;
+    margin-top: 5rem;
   }
 
+
+  /*
   .content h1 {
     font-size: 9rem;
   }
@@ -503,13 +520,13 @@ img {
 
   .content p {
     font-size: 5rem;
-  }
+  } */
 
-  .containerFeed {
+  /*  .containerFeed {
     width: 80rem;
-  }
+  } */
 
-  form .textarea {
+  /*   form .textarea {
     height: 25rem;
   }
 
@@ -528,10 +545,10 @@ img {
 
   form .btn button {
     font-size: 4rem;
-  }
+  } */
 }
 
-@media(max-width:614px) {
+/* @media(max-width:614px) {
   html {
     font-size: 15%;
   }
@@ -752,4 +769,4 @@ img {
     font-size: 4rem;
   }
 
-}
+} */
