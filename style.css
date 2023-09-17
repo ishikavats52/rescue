@@ -12,12 +12,12 @@ font-family: 'Roboto', sans-serif; */
 }
 
 :root {
-  --primary-color: #883d3d;
+  --primary-color: #fff;
   --secondary-color: #212121;
 }
 
 .dark-theme {
-  --primary-color: #000106;
+  --primary-color: #00102A;
   --secondary-color: #fff;
 }
 
@@ -35,7 +35,7 @@ body {
 /* NAV */
 nav {
   display: flex;
-  background-color: #F6A75D;
+  background-color: #101b5e;
   height: 8.5vh;
   width: 100%;
   align-items: center;
@@ -76,7 +76,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #9c5b1e;
+  background-color: #6BCCCD;
   border-radius: 1.5rem;
   background-size: 10px
 }
@@ -173,7 +173,7 @@ footer {
   padding-bottom: 2rem;
   height: 15vh;
   width: 100%;
-  background-color: #F6A75D;
+  background-color:#304FFF;
 }
 
 /* Feedback css */
