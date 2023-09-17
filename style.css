@@ -174,26 +174,28 @@ footer {
   padding-bottom: 2rem;
   height: 32vh;
   width: 100%;
-  background-color:#101b5e;
+  background-color: #101b5e;
   color: #bdb1ff;
 }
-footer ul{
+
+footer ul {
   display: flex;
   align-items: center;
   list-style-type: none;
   justify-content: center;
   font-size: 2rem;
   cursor: pointer;
-  gap:2rem;
+  gap: 2rem;
   margin: 1rem;
 }
 
 
-footer ul li a{
+footer ul li a {
   color: #fff;
   text-decoration: none;
-  
+
 }
+
 #ed:hover {
   background-color: #6BCCCD;
   border-radius: 1.5rem;
@@ -389,7 +391,8 @@ img {
   font-family: 'Bree Serif', serif;
   color: var(--secondary-color);
 }
-.content p a{
+
+.content p a {
   text-decoration: none;
 }
 
@@ -486,6 +489,7 @@ img {
   }
 
   nav h1 {
+    padding-left: 0%;
     font-size: 8rem;
   }
 
@@ -494,7 +498,7 @@ img {
     columns: 2;
     gap: 14rem;
     font-size: 5rem;
-
+    padding-left: 0%;
   }
 
   nav ul li {
@@ -503,6 +507,7 @@ img {
 
   #icon {
     width: 6rem;
+    margin-left:0%;
   }
 
   .firstSection>div {
@@ -572,21 +577,22 @@ img {
   } */
 }
 
- @media(max-width:614px) {
-  html {
+@media(max-width:614px) {
+/*   html {
     font-size: 15%;
-  }
- 
-  nav h1 {
+  } */
+
+  /* nav h1 {
     font-size: 10rem;
   }
 
   nav ul {
     font-size: 7rem;
   }
+
   #icon {
     width: 8rem;
-  }
+  } */
 
   footer h1 {
     font-size: 6rem;
@@ -595,6 +601,7 @@ img {
   footer h2 {
     font-size: 5rem;
   }
+
   .content h1 {
     font-size: 11rem;
   }
@@ -605,10 +612,10 @@ img {
 
   .content p {
     font-size: 6rem;
-  } 
+  }
 
- 
-/*
+
+  /*
   nav {
     height: 5vh;
   }
@@ -654,19 +661,22 @@ img {
 }
 
 @media(max-width:468px) {
-  html {
+  /* html {
     font-size: 10%;
-  }
-  nav h1 {
+  } */
+
+ /*  nav h1 {
     font-size: 15rem;
   }
 
   nav ul {
     font-size: 12rem;
   }
+
   #icon {
     width: 10rem;
-  }
+  } */
+
   footer h1 {
     font-size: 8rem;
   }
@@ -674,6 +684,7 @@ img {
   footer h2 {
     font-size: 7rem;
   }
+
   .content h1 {
     font-size: 13rem;
   }
@@ -684,10 +695,10 @@ img {
 
   .content p {
     font-size: 8rem;
-  } 
+  }
 
 
-/*
+  /*
 
   nav {
     height: 5vh;
@@ -769,6 +780,7 @@ img {
 
 */
 }
+
 /*
 @media(max-width:395px) {
   html {
@@ -857,7 +869,3 @@ img {
   }
 
 } */
-
-
-
-
