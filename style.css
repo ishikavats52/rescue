@@ -44,6 +44,7 @@ nav {
 nav h1 {
   padding-left: 5rem;
   font-size: 6rem;
+  color: #bdb1ff;
 }
 
 nav ul {
@@ -52,7 +53,7 @@ nav ul {
   cursor: pointer;
   font-size: 2.5rem;
   font-weight: 600;
-  padding-left: 20rem;
+  padding-left: 30rem;
   gap: 4rem;
   text-decoration: none;
 }
@@ -78,7 +79,7 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #6BCCCD;
   border-radius: 1.5rem;
-  background-size: 10px
+  padding: 0 1rem;
 }
 
 #icon {
@@ -171,10 +172,34 @@ footer {
   margin-top: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  height: 15vh;
+  height: 32vh;
   width: 100%;
-  background-color:#304FFF;
+  background-color:#101b5e;
+  color: #bdb1ff;
 }
+footer ul{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  gap:2rem;
+  margin: 1rem;
+}
+
+
+footer ul li a{
+  color: #fff;
+  text-decoration: none;
+  
+}
+#ed:hover {
+  background-color: #6BCCCD;
+  border-radius: 1.5rem;
+  padding: 0 1rem;
+}
+
 
 /* Feedback css */
 
@@ -364,6 +389,9 @@ img {
   font-family: 'Bree Serif', serif;
   color: var(--secondary-color);
 }
+.content p a{
+  text-decoration: none;
+}
 
 @media(max-width:1780px) {
   html {
@@ -450,8 +478,9 @@ img {
   }
 
   nav {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 28vh;
 
   }
@@ -463,9 +492,6 @@ img {
   nav ul {
     display: block;
     columns: 2;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 14rem;
     font-size: 5rem;
 
@@ -831,3 +857,7 @@ img {
   }
 
 } */
+
+
+
+
