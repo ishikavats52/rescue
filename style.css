@@ -172,7 +172,7 @@ footer {
   margin-top: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  height: 32vh;
+  height: 34vh;
   width: 100%;
   background-color: #101b5e;
   color: #bdb1ff;
@@ -201,6 +201,9 @@ footer ul li a {
   border-radius: 1.5rem;
   padding: 0 1rem;
 }
+#footerFeed{
+  margin-top: 44rem;
+}
 
 
 /* Feedback css */
@@ -216,9 +219,7 @@ footer ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
-  margin-left: 75rem;
-
+  margin: 3rem auto;
 }
 
 /* .containerFeed .post{
@@ -420,9 +421,9 @@ img {
 
   }
 
-  footer {
+/*   footer {
     height: 18vh;
-  }
+  } */
 
   footer h1 {
     font-size: 3rem;
@@ -430,6 +431,12 @@ img {
 
   footer h2 {
     font-size: 2rem;
+  }
+  #ed{
+    font-size: 3rem;
+  }
+  .content a{
+    font-size: 3rem;
   }
 
 }
@@ -444,16 +451,16 @@ img {
 
   }
 
-  footer {
-    height: 16vh;
-  }
+   footer {
+    height: 38vh;
+  } 
 
   footer h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   footer h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .content h1 {
@@ -467,6 +474,20 @@ img {
   .content p {
     font-size: 4rem;
   }
+  .alert {
+    font-size: 10px;
+  }
+  form header {
+    font-size: 4rem;
+   
+  }
+  #ed{
+    font-size: 4rem;
+  }
+  #footerFeed{
+    margin-top: 80rem;
+  }
+  
 
 }
 
@@ -507,7 +528,7 @@ img {
 
   #icon {
     width: 6rem;
-    margin-left:0%;
+    margin-left: 0%;
   }
 
   .firstSection>div {
@@ -516,7 +537,7 @@ img {
   }
 
   footer {
-    height: 17vh;
+    height: 34vh;
   }
 
   footer h1 {
@@ -531,6 +552,46 @@ img {
   .content {
     width: 80%;
     margin-top: 5rem;
+  }
+  #ed{
+    font-size: 6rem;
+  }
+
+  .containerFeed {
+    width: 60rem;
+    height: 70rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .star-wedget label {
+    font-size: 7.5rem;
+  }
+  form header {
+    font-size: 5rem;
+   
+  }
+  
+  .alert {
+    font-size: 12px;
+  }
+  
+  form .textarea {
+    height: 28rem;
+  }
+  
+  form .textarea textarea {
+    font-size: 3.5rem;
+  }
+  
+  form .btn {
+    height: 7rem;
+    margin: 1.5rem 0;
+  }
+  
+  form .btn button {
+    font-size: 4rem;
   }
 
   /*  .leftSection .btn {
@@ -578,7 +639,7 @@ img {
 }
 
 @media(max-width:614px) {
-/*   html {
+  /*   html {
     font-size: 15%;
   } */
 
@@ -594,15 +655,15 @@ img {
     width: 8rem;
   } */
 
-  footer h1 {
+ /*  footer h1 {
     font-size: 6rem;
   }
 
   footer h2 {
     font-size: 5rem;
-  }
+  } */
 
-  .content h1 {
+/*   .content h1 {
     font-size: 11rem;
   }
 
@@ -612,7 +673,7 @@ img {
 
   .content p {
     font-size: 6rem;
-  }
+  } */
 
 
   /*
@@ -663,7 +724,7 @@ img {
 @media(max-width:468px) {
   /* html {
     font-size: 10%;
-  } */
+  } 
 
  /*  nav h1 {
     font-size: 15rem;
@@ -677,7 +738,7 @@ img {
     width: 10rem;
   } */
 
-  footer h1 {
+  /*   footer h1 {
     font-size: 8rem;
   }
 
@@ -696,7 +757,7 @@ img {
   .content p {
     font-size: 8rem;
   }
-
+ */
 
   /*
 
@@ -781,13 +842,13 @@ img {
 */
 }
 
-/*
+
 @media(max-width:395px) {
-  html {
+/*   html {
     font-size: 5%;
   }
-
-  nav {
+ */
+/*   nav {
     height: 4vh;
   }
 
@@ -813,21 +874,21 @@ img {
   .leftSection .btn {
     font-size: 30rem;
     border-radius: 20rem;
-  }
+  } */
 
-  footer h1 {
+ /*  footer h1 {
     font-size: 15rem;
   }
 
   footer h2 {
     font-size: 12rem;
-  }
+  } */
 
   footer {
-    height: 10vh;
+    height: 38vh;
   }
 
-  .content {
+ /*  .content {
     width: 90%;
   }
 
@@ -866,6 +927,6 @@ img {
 
   form .btn button {
     font-size: 4rem;
-  }
+  } */
 
-} */
+} 
