@@ -200,7 +200,8 @@ footer ul li a {
   border-radius: 1.5rem;
   padding: 0 1rem;
 }
-#footerFeed{
+
+#footerFeed {
   margin-top: 44rem;
 }
 
@@ -420,10 +421,6 @@ img {
 
   }
 
-/*   footer {
-    height: 18vh;
-  } */
-
   footer h1 {
     font-size: 3rem;
   }
@@ -431,10 +428,12 @@ img {
   footer h2 {
     font-size: 2rem;
   }
-  #ed{
+
+  #ed {
     font-size: 3rem;
   }
-  .content a{
+
+  .content a {
     font-size: 3rem;
   }
 
@@ -450,9 +449,9 @@ img {
 
   }
 
-   footer {
+  footer {
     height: 38vh;
-  } 
+  }
 
   footer h1 {
     font-size: 3.5rem;
@@ -473,20 +472,27 @@ img {
   .content p {
     font-size: 4rem;
   }
+
+  .star-wedget label {
+    font-size: 4.1rem;
+  }
+
   .alert {
     font-size: 10px;
   }
+
   form header {
-    font-size: 4rem;
-   
+    font-size: 3rem;
+
   }
-  #ed{
+
+  #ed {
     font-size: 4rem;
   }
-  #footerFeed{
+
+  #footerFeed {
     margin-top: 80rem;
   }
-  
 
 }
 
@@ -498,6 +504,10 @@ img {
   .firstSection {
     flex-direction: column;
     width: 100%;
+  }
+
+  .firstSection>div {
+    width: 60%;
   }
 
   nav {
@@ -530,9 +540,6 @@ img {
     margin-left: 0%;
   }
 
-  .firstSection>div {
-    width: 60%;
-  }
 
   footer {
     height: 34vh;
@@ -551,43 +558,42 @@ img {
     width: 80%;
     margin-top: 5rem;
   }
-  #ed{
+
+  #ed {
     font-size: 6rem;
   }
 
   .containerFeed {
-    width: 60rem;
-    height: 70rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 80rem;
+    height: 80rem;
+    border-radius: 2rem;
   }
+
   .star-wedget label {
-    font-size: 7.5rem;
+    font-size: 11.2rem;
   }
+
   form header {
     font-size: 5rem;
-   
   }
-  
+
   .alert {
     font-size: 12px;
   }
-  
+
   form .textarea {
-    height: 28rem;
+    height: 29rem;
   }
-  
+
   form .textarea textarea {
     font-size: 3.5rem;
   }
-  
+
   form .btn {
-    height: 7rem;
-    margin: 1.5rem 0;
+    height: 8rem;
+    margin: 2rem 0;
   }
-  
+
   form .btn button {
     font-size: 4rem;
   }
@@ -653,7 +659,7 @@ img {
     width: 8rem;
   } */
 
- /*  footer h1 {
+  /*  footer h1 {
     font-size: 6rem;
   }
 
@@ -661,7 +667,7 @@ img {
     font-size: 5rem;
   } */
 
-/*   .content h1 {
+  /*   .content h1 {
     font-size: 11rem;
   }
 
@@ -842,11 +848,11 @@ img {
 
 
 @media(max-width:395px) {
-/*   html {
+  /*   html {
     font-size: 5%;
   }
  */
-/*   nav {
+  /*   nav {
     height: 4vh;
   }
 
@@ -874,7 +880,7 @@ img {
     border-radius: 20rem;
   } */
 
- /*  footer h1 {
+  /*  footer h1 {
     font-size: 15rem;
   }
 
@@ -886,7 +892,7 @@ img {
     height: 38vh;
   }
 
- /*  .content {
+  /*  .content {
     width: 90%;
   }
 
@@ -927,4 +933,4 @@ img {
     font-size: 4rem;
   } */
 
-} 
+}
