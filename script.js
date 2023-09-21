@@ -28,7 +28,7 @@ if (icon != null) {
 }
 
 /* Slider */
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
   var slide = document.getElementById("slider");
   var btn1 = document.getElementById("btn1");
   var btn2 = document.getElementById("btn2");
@@ -70,28 +70,17 @@ document.addEventListener("DOMContentLoaded", function () {
       btn1.classList.remove("active");
       btn2.classList.remove("active");
       btn3.classList.remove("active");
-    }
-  }
-});
+    }
+  }
+}); */
 
-/* Feedback script */
+var currentIndex = 0;
+var images = document.querySelectorAll("#slider img");
 
+function changeImage() {
+  images[currentIndex].style.display = "none";
+  currentIndex = (currentIndex + 1) % images.length;
+  images[currentIndex].style.display = "block";
+}
 
-/* const btn = document.querySelector("button");
-const post = document.querySelector(".post");
-const widget = document.querySelector(".star-wedget");
-const editBtn = document.querySelector(".edit");
-btn.onclick =()=>{
-    widget.style.display = "none";
-    post.style.display = "block";
-    editBtn.onclick =()=>{
-        widget.style.display = "block";
-        post.style.display = "none";
-        
-    }
-    return false;
-} */
-
-
-
-
+setInterval(changeImage, 2000); 

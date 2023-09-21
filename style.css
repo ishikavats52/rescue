@@ -111,33 +111,29 @@ nav ul li a:hover {
 #slider {
   width: 100%;
   display: inline-flex;
-  transition: 0.7s;
+  transition: 0.7s; 
 
 }
 
 #slider img {
-  width: 100%;
+  width: 50rem;
+  height:50rem;
+  object-fit: scale-down;
 }
 
-.indicators {
-  position: absolute;
-  left: 50%;
-  bottom: 2rem;
-  transform: translateX(-50%);
-}
 
-.indicators span {
+/* .indicators span {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   background: rgba(102, 72, 72, 0.5);
   cursor: pointer;
-}
+} */
 
-.active {
+/* .active {
   background: rgb(139, 33, 33) !important;
-}
+} */
 
 
 .leftSection .button {
