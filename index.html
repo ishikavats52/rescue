@@ -10,7 +10,9 @@
 
 <body>
     <nav>
-        <h1>Rescue</h1>
+        <div id="logo">
+            <img src="./logo.png" alt="">
+        </div>
         <ul>
             <li><a href="index.html" target="_parent">Home</a></li>
             <li><a href="about.html" target="_parent">About</a></li>
@@ -27,8 +29,9 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
+                <p>🌟 "In the heart of chaos, we are the beacon of hope. Together, we rise, rescue, and rebuild." 🌟</p>
                 <div class="button">
-                    <button class="btn" id="github"><a href="https://github.com/varshneyboy2004/rescue"
+                    <button class="btn" id="github"><a href="#"
                             target="_blank">Download</a></button>
 
                 </div>
@@ -36,11 +39,11 @@
             <div class="rightSection">
                 <div id="slider">
                     <img src="bg4.png" alt="" id="image">
-                     <img src="bg1.png" alt="">
+                    <img src="bg1.png" alt="">
                     <img src="bg9.png" alt="">
-                    <img src="bg10.png" alt=""> 
+                    <img src="bg10.png" alt="">
                 </div>
-              <!--   <div class="indicators">
+                <!--   <div class="indicators">
                     <span id="btn1" class="active"></span>
                     <span id="btn2"></span>
                     <span id="btn3"></span>
@@ -70,5 +73,17 @@
 </body>
 <script src="https://kit.fontawesome.com/c2a94fbf5c.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+<script>
+    var currentIndex = 0;
+    var images = document.querySelectorAll("#slider img");
+
+    function changeImage() {
+        images[currentIndex].style.display = "none";
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].style.display = "block";
+    }
+
+    setInterval(changeImage, 2000); 
+</script>
 
 </html>

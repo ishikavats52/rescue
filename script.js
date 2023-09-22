@@ -74,13 +74,4 @@ if (icon != null) {
   }
 }); */
 
-var currentIndex = 0;
-var images = document.querySelectorAll("#slider img");
 
-function changeImage() {
-  images[currentIndex].style.display = "none";
-  currentIndex = (currentIndex + 1) % images.length;
-  images[currentIndex].style.display = "block";
-}
-
-setInterval(changeImage, 2000); 
