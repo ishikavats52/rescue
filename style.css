@@ -231,26 +231,6 @@ footer ul li a {
   margin: 3rem auto;
 }
 
-/* .containerFeed .post{
-  display: none;
-}
-.containerFeed .text{
-  font-size: 2.5rem;
-  color:#666;
-  font-weight: 500;
-}
-.containerFeed .edit{
-  position: absolute;
-  right:1rem;
-  top:.5rem;
-  font-size: 1.6rem;
-  color: #666;
-  font-weight: 500;
-  cursor: pointer;
-}
-.containerFeed .edit:hover{
-  text-decoration: underline;
-} */
 .containerFeed .star-wedget input {
   display: none;
 }
@@ -297,12 +277,6 @@ input#rate-5:checked~label {
   content: "I just love it 😍";
 }
 
-/*  .containerFeed form{
-  display: none;
-} 
- input:checked ~ form{
-  display: block;
-}  */
 form header {
   width: 100%;
   font-size: 2.5rem;
