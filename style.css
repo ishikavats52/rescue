@@ -342,8 +342,17 @@ form .btn button:hover {
 }
 
 /*ABOUT */
-img {
+#box{
+  overflow: hidden;
+
+}
+#box img{
   width: 100%;
+  transition: all ease 1s;
+  
+}
+#box:hover img{
+  scale:1.1;
 }
 
 .content {
